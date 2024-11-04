@@ -1,1 +1,11 @@
-<p>authors works!</p>
+<div>
+  <h2>Search our Book Collection</h2>
+  <div>
+    <label for="id">Author Id:</label>
+    <input type="text" #authQuery id="id" />
+    <button (click)="submit(authQuery.value)">Search</button>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
